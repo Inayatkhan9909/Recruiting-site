@@ -1,0 +1,95 @@
+﻿@page
+@model Recruit.Pages.ApplyModel
+@{
+}
+
+
+
+<div class="apply_all_div">
+
+
+<form method="post">
+
+    
+
+    <div class="s_details">
+            <div class="L_title">
+                <h1>Recruit</h1>
+                <h3>Get the job you desirve</h3>
+            </div>
+
+        <div class="details_div fn">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+
+        <div class="details_div ln">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required>
+        </div>
+
+        <div class="details_div em">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="details_div ps">
+            <label for="qualification">Qualification</label>
+            <input type="text" name="qualification" id="qualification">
+        </div>
+
+
+        <div class="details_div ps">
+            <label for="skills">Skills</label>
+            <input type="text" name="skills" id="skills">
+        </div>
+
+        <div class="details_div ps">
+            <label for="job">Job to apply for</label>
+            <input type="text" name="job" id="job">
+        </div>
+
+          
+       
+
+    </div>
+
+        <div class="btn_signup">
+            <button>Apply</button>
+        </div>
+
+
+        @if (Model.successMessage.Length > 0)
+        {
+            <div class=" alert alert-success alert-dismissible fade show " role="alert">
+
+
+                <strong> @Model.successMessage</strong>
+
+
+
+                <button type="button" class=" btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+        }
+
+
+        @if (Model.errorMessage.Length > 0)
+        {
+            <div class=" alert alert-warning alert-dismissible fade show " role="alert">
+                <strong> @Model.errorMessage</strong>
+                <button type="button" class=" btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+        }
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+   
+

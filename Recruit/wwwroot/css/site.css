@@ -1,0 +1,182 @@
+
+
+  /*index page css*/
+.index_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70vw;
+    height: 100%;
+    margin: 5vh auto;
+    gap: 3vw;
+}
+
+.advertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid black;
+    padding: 4vh 3vw;
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.ad_name {
+    font-size: 25px;
+}
+
+.vacany {
+    font-size: 20px;
+}
+
+.mode_salary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.salary {
+    background-color: beige;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.mode {
+    background-color: beige;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.description {
+    text-align: left;
+    height: 30%;
+    width: 125%;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+.apply {
+    margin-top: 4vh;
+}
+
+    .apply a {
+        background-color: #2557a7;
+        color: white;
+        padding: 8px 25px;
+        text-decoration: none;
+        font-size: 1.1em;
+        border-radius: 5px;
+    }
+
+
+
+
+   /* Apply page css*/
+
+.apply_all_div {
+    width: 80vw;
+  
+    margin: 3vh;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    align-items: center;
+    margin: 3vh 0px;
+}
+
+
+.L_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.L_title h1{
+font-size:2.5em;
+}
+
+    .L_title h3 {
+        font-size: 1.3em;
+    }
+
+
+
+
+.s_details {
+    margin-top: 3vh;
+}
+
+.details_div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.s_details label {
+    font-size: 20px;
+}
+
+.s_details input {
+    font-size: 17px;
+    border-radius: 10px;
+    width: 200%;
+    padding: 6px 20px;
+   
+    font-family: sans-serif;
+}
+
+
+.ln {
+    margin: 8px 0px;
+}
+
+.em {
+    margin: 8px 0px;
+}
+
+.btn_signup {
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0px;
+    margin-left:12vw;
+}
+
+    .btn_signup button {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #2557a7;
+        color: white;
+        padding: 6px 25px;
+        text-decoration: none;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+
+
+   /* Admin table css*/
+
+table {
+    margin: 5vh auto;
+    width: 90vw;
+}
+
+table, td, th {
+    border: 2px solid;
+    padding: 1vh 2vw 1vh 3vw;
+}
+
+tr td {
+    padding: 1vh 2vw 1vh 3vw;
+}
