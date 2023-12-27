@@ -40,17 +40,17 @@ namespace Recruit.Pages
 
             try
             {
-                Console.WriteLine("Entered try");
+                
                 using SqlConnection connection = new(connectionstring);
                 connection.Open();
-                Console.WriteLine("Entered sql connection");
+            
 
                 string sql = "Insert into  Jobapplicants" + "(firstname,lastname,email,qualification,skills,job) Values" +
                     "(@firstname,@lastname,@email,@qualification,@skills,@job)";
 
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
-                    Console.WriteLine("Entered sqlcommand");
+                    
                     command.Parameters.AddWithValue("@firstname", ur.firstname);
                     command.Parameters.AddWithValue("@lastname", ur.lastname);
                     command.Parameters.AddWithValue("@email", ur.email);

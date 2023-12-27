@@ -19,3 +19,5 @@ values('Mehvish','Tango','Pango@gmail.com','Z-Tech','Css,Html','Full=Stack devel
 
 select * from Jobapplicants
 drop table Jobapplicants
+
+

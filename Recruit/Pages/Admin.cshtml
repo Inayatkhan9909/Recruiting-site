@@ -4,12 +4,20 @@
 }
 
 
+<div class="div_top_table_admin">
 
-
-<table>
     <h1>List of Candidates for various vaccancies</h1>
 
-    <thead>
+    <div class="btns_admin_top">
+        <a class="shortlisted_ancortag" href="shortlisted">Shortlist</a>
+        <a class="Reject_ancortag" href="/Rejected">Rejected</a>
+    </div>
+</div>
+
+<table>
+
+    
+  <thead>
 
        <th>Application no</th>
        <th>First Name</th>
@@ -18,8 +26,10 @@
        <th>Qualification</th>
        <th>Skills</th>
        <th>Applied for</th>
+       <th>Date</th>
+       <th>Action</th>
 
-    </thead>
+  </thead>
     <tbody>
 
         @foreach (var items in Model.applicantlist )
@@ -33,14 +43,18 @@
                 <td>@items.skills</td>
                 <td>@items.job</td>
                 <td>@items.Created_at</td>
-
+                <td class="td_action">
+                    <a class="action_short" href="/Shortlist?Form_no=@items.Form_no">Shortlist</a>
+                                           
+                    <a class="action_reject" href="/Rejected?Form_no=@items.Form_no">Reject</a>
+                </td>
             </tr>
 
 
+           
         }
        
        
-      
 
     </tbody>
 

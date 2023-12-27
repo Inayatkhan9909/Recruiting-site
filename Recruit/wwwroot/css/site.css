@@ -167,9 +167,44 @@ font-size:2.5em;
 
    /* Admin table css*/
 
+.div_top_table_admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    gap: 80px;
+    margin-top: 3vh;
+}
+
+.btns_admin_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    gap: 30px;
+}
+
+    .btns_admin_top a {
+        color: black;
+        font-size: 1.4em;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+.shortlisted_ancortag {
+    background-color: rgb(75, 223, 75);
+}
+
+.Reject_ancortag {
+    background-color: red;
+}
+
 table {
     margin: 5vh auto;
-    width: 90vw;
+    width: 95vw;
+    height: 100%;
+   
 }
 
 table, td, th {
@@ -178,5 +213,37 @@ table, td, th {
 }
 
 tr td {
-    padding: 1vh 2vw 1vh 3vw;
+    padding: 1vh 1vw 1vh 3vw;
+}
+
+.td_action {
+    display: flex;
+    flex-direction: column;
+    border:thin;
+    gap: 4px;
+}
+
+.action_short {
+    
+    text-decoration: none;
+    color: black;
+    background-color: rgb(70, 233, 70);
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.action_reject {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(246, 52, 52);
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+table_cover_Reject{
+    width:96vw;
+    height:100%;
+    margin:3vh auto;
 }

@@ -23,4 +23,17 @@
         public string Created_at;
 
     }
+
+    public class Rejects
+    {
+        public string Form_no;
+        public string firstname;
+        public string lastname;
+        public string email;
+        public string qualification;
+        public string skills;
+        public string job;
+        public string Created_at;
+
+    }
 }

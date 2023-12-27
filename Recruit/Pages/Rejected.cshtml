@@ -1,0 +1,53 @@
+﻿@page
+@model Recruit.Pages.RejectedModel
+@{
+}
+
+
+<div class="table_cover_Reject">
+
+    <table>
+
+        <h1>List of Candidates Rejected</h1>
+
+        <thead>
+
+        <th>Application no</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Qualification</th>
+        <th>Skills</th>
+        <th>Applied for</th>
+        <th>Date</th>
+        <th>Status</th>
+
+        </thead>
+        <tbody>
+
+            @foreach (var items in Model.rejectlist)
+            {
+                <tr>
+                    <td>@items.Form_no</td>
+                    <td>@items.firstname</td>
+                    <td>@items.lastname</td>
+                    <td>@items.email</td>
+                    <td>@items.qualification</td>
+                    <td>@items.skills</td>
+                    <td>@items.job</td>
+                    <td>@items.Created_at</td>
+                    <td>Rejected</td>
+
+                </tr>
+
+            }
+
+
+
+        </tbody>
+
+
+
+
+
+</div>

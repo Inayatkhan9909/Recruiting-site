@@ -39,6 +39,7 @@ namespace Recruit.Pages
                                 applicants.qualification = reader.GetString(4);
                                 applicants.skills = reader.GetString(5);
                                 applicants.job = reader.GetString(6);
+                                applicants.Created_at = reader.GetDateTime(7).ToString();
                                 applicantlist.Add(applicants);
                             
                             }
