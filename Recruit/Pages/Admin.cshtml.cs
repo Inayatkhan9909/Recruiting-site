@@ -1,9 +1,12 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
 
 namespace Recruit.Pages
 {
+
+ 
     public class AdminModel : PageModel
     {
         private string connectionstring;
@@ -14,6 +17,9 @@ namespace Recruit.Pages
         }
 
         public List<Applicants> applicantlist = new List<Applicants>();
+
+
+       
         public void OnGet()
         {
             try
@@ -36,10 +42,11 @@ namespace Recruit.Pages
                                 applicants.firstname = reader.GetString(1);
                                 applicants.lastname = reader.GetString(2);
                                 applicants.email = reader.GetString(3);
-                                applicants.qualification = reader.GetString(4);
-                                applicants.skills = reader.GetString(5);
-                                applicants.job = reader.GetString(6);
-                                applicants.Created_at = reader.GetDateTime(7).ToString();
+                                applicants.dob = reader.GetString(4);
+                                applicants.qualification = reader.GetString(5);
+                                applicants.skills = reader.GetString(6);
+                                applicants.job = reader.GetString(7);
+                                applicants.Created_at = reader.GetDateTime(8).ToString();
                                 applicantlist.Add(applicants);
                             
                             }

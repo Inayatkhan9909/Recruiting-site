@@ -24,11 +24,12 @@ namespace Recruit.Pages
             ur.firstname = Request.Form["firstname"];
             ur.lastname = Request.Form["lastname"];
             ur.email = Request.Form["email"];
+            ur.dob = Request.Form["dob"];
             ur.qualification = Request.Form["qualification"];
             ur.skills = Request.Form["skills"];
             ur.job = Request.Form["job"];
 
-            if (ur.firstname.Length == 0 || ur.lastname.Length == 0 || ur.email.Length == 0 ||
+            if (ur.firstname.Length == 0 || ur.lastname.Length == 0 || ur.email.Length == 0 || ur.dob.Length==0||
                 ur.qualification.Length == 0 || ur.skills.Length == 0 || ur.job.Length == 0)
             {
                 errorMessage = "All field are required";
@@ -45,8 +46,8 @@ namespace Recruit.Pages
                 connection.Open();
             
 
-                string sql = "Insert into  Jobapplicants" + "(firstname,lastname,email,qualification,skills,job) Values" +
-                    "(@firstname,@lastname,@email,@qualification,@skills,@job)";
+                string sql = "Insert into  Jobapplicants" + "(firstname,lastname,email,dob,qualification,skills,job) Values" +
+                    "(@firstname,@lastname,@email,@dob,@qualification,@skills,@job)";
 
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
@@ -54,6 +55,7 @@ namespace Recruit.Pages
                     command.Parameters.AddWithValue("@firstname", ur.firstname);
                     command.Parameters.AddWithValue("@lastname", ur.lastname);
                     command.Parameters.AddWithValue("@email", ur.email);
+                    command.Parameters.AddWithValue("@dob", ur.dob);
                     command.Parameters.AddWithValue("@qualification", ur.qualification);
                     command.Parameters.AddWithValue("@skills", ur.skills);
                     command.Parameters.AddWithValue("@job", ur.job);

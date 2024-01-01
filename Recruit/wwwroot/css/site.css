@@ -172,7 +172,7 @@ font-size:2.5em;
     align-items: center;
     justify-content: center;
     width: 90vw;
-    gap: 80px;
+    gap: 60px;
     margin-top: 3vh;
 }
 
@@ -242,8 +242,12 @@ tr td {
     text-align: center;
 }
 
-table_cover_Reject{
-    width:96vw;
-    height:100%;
-    margin:3vh auto;
+.table_cover_Reject {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    gap: 20px;
+    margin-top: 3vh;
 }

@@ -1,5 +1,5 @@
 ﻿@page
-@model Recruit.Pages.RejectedModel
+@model Recruit.Pages.ShortlistModel
 @{
 }
 
@@ -8,25 +8,25 @@
 
     <table>
 
-        <h1>List of Candidates Rejected</h1>
+        <h1>List of Candidates Shortlisted</h1>
 
-        <thead>
+       <thead>
 
-        <th>Application no</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-        <th>DOB</th>
-        <th>Qualification</th>
-        <th>Skills</th>
-        <th>Applied for</th>
-        <th>Date</th>
-        <th>Status</th>
+          <th>Application no</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>DOB</th>
+          <th>Qualification</th>
+          <th>Skills</th>
+          <th>Applied for</th>
+          <th>Date</th>
+          <th>Status</th>
 
-        </thead>
+     </thead>
         <tbody>
 
-            @foreach (var items in Model.rejectlist)
+            @foreach (var items in Model.shortlisted)
             {
                 <tr>
                     <td>@items.Form_no</td>
@@ -38,7 +38,7 @@
                     <td>@items.skills</td>
                     <td>@items.job</td>
                     <td>@items.Created_at</td>
-                    <td>Rejected</td>
+                    <td>Shortlisted</td>
 
                 </tr>
 

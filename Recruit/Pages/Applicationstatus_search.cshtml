@@ -1,0 +1,66 @@
+﻿@page
+@model Recruit.Pages.Applicationstatus_searchModel
+@{
+}
+
+
+<div class="apply_all_div">
+
+
+    <form method="post">
+
+
+
+        <div class="s_details">
+           
+            
+
+            <div class="details_div ps">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="details_div ps">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+        <div class="btn_signup">
+            <button type="submit">Search</button>
+        </div>
+
+
+       @*  @if (Model.successMessage.Length > 0)
+        {
+            <div class=" alert alert-success alert-dismissible fade show " role="alert">
+
+
+                <strong> @Model.successMessage</strong>
+
+
+
+                <button type="button" class=" btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+        }
+
+
+        @if (Model.errorMessage.Length > 0)
+        {
+            <div class=" alert alert-warning alert-dismissible fade show " role="alert">
+                <strong> @Model.errorMessage</strong>
+                <button type="button" class=" btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+        }
+ *@
+
+    </form>
+
+</div>

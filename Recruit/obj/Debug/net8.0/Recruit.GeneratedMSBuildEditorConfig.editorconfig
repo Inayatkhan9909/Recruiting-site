@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/inaya/OneDrive/Desktop/asp web app/Recruit/Recruit/Pages/Applicationstatus_mainpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25zdGF0dXNfbWFpbnBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/inaya/OneDrive/Desktop/asp web app/Recruit/Recruit/Pages/Applicationstatus_search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25zdGF0dXNfc2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/inaya/OneDrive/Desktop/asp web app/Recruit/Recruit/Pages/Apply.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/inaya/OneDrive/Desktop/asp web app/Recruit/Recruit/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/inaya/OneDrive/Desktop/asp web app/Recruit/Recruit/Pages/Shortlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcnRsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/inaya/OneDrive/Desktop/asp web app/Recruit/Recruit/Pages/_ViewImports.cshtml]

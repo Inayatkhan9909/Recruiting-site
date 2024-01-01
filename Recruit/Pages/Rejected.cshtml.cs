@@ -27,8 +27,8 @@ namespace Recruit.Pages
                 {
                     connection.Open();
 
-                    string sql = "INSERT INTO Rejectedapplicants (Form_no, firstname, lastname, email, qualification, skills, job) " +
-                        "SELECT Form_no, firstname, lastname, email, qualification, skills, job FROM Jobapplicants WHERE Form_no = @Form_no;";
+                    string sql = "INSERT INTO Rejectedapplicants (Form_no, firstname, lastname, email,dob, qualification, skills, job) " +
+                        "SELECT Form_no, firstname, lastname, email,dob, qualification, skills, job FROM Jobapplicants WHERE Form_no = @Form_no;";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
@@ -69,10 +69,11 @@ namespace Recruit.Pages
                                 rejects.firstname = reader.GetString(1);
                                 rejects.lastname = reader.GetString(2);
                                 rejects.email = reader.GetString(3);
-                                rejects.qualification = reader.GetString(4);
-                                rejects.skills = reader.GetString(5);
-                                rejects.job = reader.GetString(6);
-                                rejects.Created_at = reader.GetDateTime(7).ToString();
+                                rejects.dob = reader.GetString(4);
+                                rejects.qualification = reader.GetString(5);
+                                rejects.skills = reader.GetString(6);
+                                rejects.job = reader.GetString(7);
+                                rejects.Created_at = reader.GetDateTime(8).ToString();
                                 rejectlist.Add(rejects);
 
                             }
